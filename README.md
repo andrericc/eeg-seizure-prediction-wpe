@@ -88,6 +88,8 @@ pip install -r requirements.txt
 
 Before running each notebook, update the paths in its *Setup* cell to point to your own data folder.
 
+> **Note:** one intermediate step is not included in this repository yet. It merges the outputs of `01_Data_Engineering.ipynb` (`chbXX_wpe_features.npy`, including the recovered patients) into one 18-channel matrix per patient, saved as `chbXX_X_18ch.npy`, which is the input of `02_Data_Manipulation.ipynb`.
+
 ## Limitations
 
 - **The polarity calibration is not fully causal.** The entropy direction of each patient is estimated from that patient's labeled recordings, so the system needs a short per-patient calibration step and is not a zero-shot predictor. Using only the directions of the training patients drops the mean AUC from 0.69 to 0.57.
