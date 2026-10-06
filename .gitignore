@@ -1,0 +1,8 @@
+   *.edf
+   *.seizures
+   data/
+   __pycache__/
+   *.pyc
+   .ipynb_checkpoints/
+   venv/
+   .venv/
