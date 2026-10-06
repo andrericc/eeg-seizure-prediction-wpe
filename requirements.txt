@@ -1,0 +1,12 @@
+numpy
+pandas
+scipy
+mne
+PyWavelets
+scikit-learn
+imbalanced-learn
+joblib
+matplotlib
+seaborn
+XlsxWriter
+kagglehub
